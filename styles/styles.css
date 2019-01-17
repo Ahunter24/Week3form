@@ -1,0 +1,195 @@
+/* Main Layout */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Merriweather', serif;
+  color: #000;
+  background: #fff;
+}
+
+/* Header Styles */
+
+header {
+  background: #2d3945;
+}
+header h2 {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 5% 0;
+  font-size: 18px;
+  margin: 0;
+  font-weight: normal;
+  text-align: center;
+}
+
+/* Form Styles */
+
+.form-header {
+  border-bottom: 4px solid #000;
+  margin: 0 5%;
+}
+.form-header h3 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.form-header p {
+  font-size: 12px;
+  font-weight: normal;
+  color: #aaa;
+  padding-bottom: 2.5%;
+  margin: 2.5% 0 5%;
+  text-align: center;
+}
+fieldset {
+  border: none;
+  padding: 0;
+}
+legend {
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 7.5% 0 5%;
+}
+label, input {
+  display: block;
+  text-align: left;
+}
+label {
+  font-size: 12px;
+  color: #aaa;
+  padding: 2.5% 0;
+}
+input, select, option {
+  width: 100%;
+  padding: 5%;
+  margin: 1% 0;
+  background-color: #eee;
+  border-radius: 4px;
+  border: none;
+}
+select {
+  font-size: 12px;
+  color: #aaa;
+  font-family: 'Merriweather', serif;
+  -webkit-appearance: none;
+}
+input:focus, select:focus {
+  outline: 0;
+  border: 2px solid #2d3945;
+  border-radius: 4px;
+}
+::-webkit-input-placeholder {
+  text-align: right;
+  font-style: italic;
+  color: #aaa;
+  font-family: 'Merriweather', serif;
+  padding-right: 1%;
+}
+#zip-code {
+  width: 50%;
+  margin-bottom: 10%;
+}
+.contact {
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  margin: 0.5% 5%;
+}
+.newsletter {
+  margin: 0 5%;
+}
+.newsletter legend {
+  padding: 5% 0 2.5%;
+}
+.newsletter h3 {
+  color: #aaa;
+  font-size: 16px;
+}
+.newsletter input {
+  width: 5%;
+  margin: 2% 0;
+  display: inline;
+  text-align: left;
+}
+.newsletter-label {
+  display: inline;
+}
+textarea {
+  width: 100%;
+  height: 100px;
+  border-radius: 4px;
+  background-color: #eee;
+  border: none;
+  margin: 2% 0;
+}
+button {
+  width: 90%;
+  height: 50px;
+  color: #fff;
+  font-size: 16px;
+  background-color: #4ebab5;
+  padding: 0;
+  font-family: 'Merriweather', serif;
+  margin: 5%;
+  border-radius: 4px;
+  border: none;
+}
+
+/* Footer */
+
+footer p {
+  text-align: center;
+  font-size: 12px;
+  font-style: italic;
+  color: #aaa;
+  font-weight: normal;
+  margin-bottom: 15%;
+}
+
+/* Desktop Media Query */
+
+@media screen and (min-width: 760px) {
+  form {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  header h2 {
+    padding: 2% 0;
+    font-size: 22px;
+  }
+  .form-header {
+    padding: 5% 0 0;
+  }
+  .form-header h3 {
+    font-size: 20px;
+  }
+  .contact div {
+    width: 100%;
+  }
+  .contact label {
+    width: 30%;
+    font-size: 18px;
+    display: inline;
+    float: left;
+  }
+  .contact input, .contact select {
+    width: 70%;
+    padding: 2.5%;
+  }
+  #zip-code {
+    width: 25%;
+  }
+  legend, .newsletter label, .newsletter h3, .form-header p {
+    font-size: 18px;
+  }
+  .clearfix {
+    content: "";
+    display: table;
+  }
+}
+
+
